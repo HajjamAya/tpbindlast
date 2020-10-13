@@ -1,0 +1,20 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800 ;
+$ORIGIN AYA-HAJJAM.local.
+@	IN	SOA	debian.AYA-HAJJAM.local. mail.AYA-HAJJAM.local. (
+			2019100101      ; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+
+AYA-HAJJAM.local.		IN	NS	debian.AYA-HAJJAM.local.
+@       IN      NS               debian.AYA-HAJJAM.local.
+debian	IN	A	10.206.0.80
+mail   IN      A	10.206.6.11
+smtp    IN      CNAME	 mail
+pop     IN      CNAME    mail
+imap    IN      CNAME    mail
+@       IN      MX      0               mail.AYA-HAJJAM.local.

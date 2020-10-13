@@ -1,0 +1,15 @@
+;
+$TTL 86400;
+@ IN SOA debian.AYA-HAJJAM.local. AYA-HAJJAM.iutbeziers.fr. (
+		2015091301 ; Serial
+		3600 ; Refresh
+		3600 ; Retry
+		3600000 ; Expire
+		86400 ) ; Minimum
+
+@ IN NS debian.AYA-HAJJAM.local.
+
+$ORIGIN 11.6.206.10.in-addr.arpa.
+
+@ IN PTR debian.AYA-HAJJAM.local.
+
